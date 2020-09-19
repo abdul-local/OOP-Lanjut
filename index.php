@@ -1,83 +1,72 @@
 <?php
-// buat class baru dengan nama hero
-class hero {
-    // buat variabel
-    protected $healthpoint;
-    protected $magicpoint;
-    protected $name;
-    // buat method dengan nama shir
-    public function shiri(){
-        echo "$this->name  menyerang dengan sihir"."<br>";
-    }
-    // buat method dengan nama serang
-    public function nyerang(){
-        echo "$this->name menyerang dengan biasa "."<br>";
+// buat clas s dengan nama DB
+class DB {
+    public function getConnection(){
+        echo"Memanggil getConnection() ... "."<br>";
 
     }
-    // buat method dengan nama tahan
-    public function tahan(){
-        echo "$this->name Bertahan dari serangan musuh"."<br>";
-    }
-    // buat method dengan nama gethealtpoint
-    public function gethealtpoint(){
-       return $this->healthpoint;
-    }
-    // buat method untuk getmagicpoint
-    public function getmegicpoint(){
-        return $this->magicpoint;
+    public function getConfig(){
+        echo "Memanggil getConfig() ..."."<br>";
     }
 }
-// buat sub class denga nama goku
-class songoku extends hero {
-    // buat method costruct
-    public function __construct()
-    {
-        $this->name = "Son Goku dragon ball";
-        $this->healthpoint=2000;
-        $this->magicpoint =1800;
-        
+// buat subclass dengan nama BaseModel
+class Basemodel extends DB {
+    // buat methode 
+    public function select(){
+        echo "Melakukan query select() "."<br>";
+    }
+    // buat methode untuk selectByid
+    public function selectByid($id){
+        echo "Melakukan query select by id - $id.."."<br>";
+    }
+    // buat method dengan nama insert
+    public function insert(){
+        echo "melakukan query insert()"."<br>";
+    }
+    // buat methode dengan nama update ()
+    public function update(){
+        echo "Melakukan query delete..."."<br>";
+    }
+    // buat method untuk delete
+    public function delete(){
+        echo "Melakuan query delete() "."<br>";
     }
 }
-// buat sub class baru dengan nama narut
-class naruto extends hero {
-
-   // buat method construct
-   public function __construct()
-   {
-       $this->name = "naruto sipuden";
-       $this->healthpoint=1700;
-       $this->magicpoint=2000;
-   }
-    
-
-}
-// buat class baru dengan nama avatar
-class avatar extends hero {
-    // buat method construct
-    public function __construct()
-    {
-        $this->name ="avatar ang ";
-        $this->healthpoint=1500;
-        $this->magicpoint=1700;
+// buat sublcass dari class BaseModel
+class TransactionModel extends BaseModel {
+    // buat method dengan nama getDailyReport
+    public function getDailyReport(){
+        echo "Menghasilkan daily report "."<br>";
+    }
+    // buat method dengan nama Montly report
+    public function getMontlyReport(){
+        echo "Menghasilkan Monly Report"."<br>";
     }
 }
-// buat sebuah instansiasi object
-$dragonball = new songoku();
-$dragonball->shiri();
-$dragonball->nyerang();
-$dragonball->tahan();
-echo "Hp: ".$dragonball->gethealtpoint()."<br>";
-echo "Mh: ".$dragonball->getmegicpoint()."<br>";
+// buat subclass dengan class utama BaseModel
+class UserModel extends Basemodel {
+    // buat method untuk authentication
+    public function auth(){
+        echo "Melakukan authentication .."."<br>";
+    }
+    // buat method untuk changePaaword
+    public function changePassword(){
+        echo "Melakukan Penggantian Password ";
+    }
+    // buat method updateProfile
+    public function updateProfile(){
+        echo "Melakukan update password";
+    }
 
-// buat sebuah instansiasi object
-$naruto1 = new naruto();
-$naruto1->shiri();
-$naruto1->nyerang();
-$naruto1->tahan();
-echo "Hp: ".$naruto1->gethealtpoint()."<br>";
-echo "Mh: ".$naruto1->getmegicpoint()."<br>";
-
-
-
-
-?>
+}
+// instansiasi
+$tm = new TransactionModel();
+$tm->getConnection();
+$tm->getConfig();
+$tm->select();
+$tm->selectByid(2);
+$tm->insert();
+$tm->update();
+$tm->delete();
+$tm->getDailyReport();
+$tm->getMontlyReport();
