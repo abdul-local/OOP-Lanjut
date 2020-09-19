@@ -1,9 +1,10 @@
 <?php
 // buat class baru dengan nama persegi 
 class Persegi {
-    // buat modifier public 
-    public $panjang;
-    public $lebar;
+    // buat modifier public
+
+    protected $panjang;
+    protected $lebar;
     // buat method construct
     public function __construct($p,$l)
     {
@@ -22,16 +23,32 @@ class Persegi {
     }
     
 }
-// buat instansiasi dengan nama hitung
-    $hitung = new Persegi (5,10);
-    echo $hitung->luas()."<br>";
-    echo $hitung->kelilig()."<br>";
+// buat class baru dengan nama balok dari kelas utamanya
+class Balok extends Persegi {
+    public $tinggi ;
+    public function __construct($p,$l,$t)
+    {
+        $this->panjang = $p;
+        $this->lebar = $l;
+        $this->tinggi = $t;
+    }
+    // buat method dengan nama luas
+    public function volume(){
+        return $this->panjang * $this->lebar * $this->tinggi ;
+    }
+    // buat method baru dengan nama keliling
+    public function luas(){
+      return (4 * ($this->panjang * $this->lebar ) ) + (2 * ( $this->lebar * $this->lebar ));
+    }
+}
+$hitungan = new Balok(10,5,2);
+echo $hitungan->volume()."<br>";
+echo $hitungan->luas()."<br>";
 
+// $hitungan->panjang = 20;
+// $hitungan->lebar = 10;
+$hitungan->tinggi = 5;
 
-    $hitung->panjang =20;
-    $hitung->lebar = 10;
-    echo $hitung->luas()."<br>";
-    echo $hitung->kelilig()."<br>";
-
-
+echo $hitungan->luas()."<br>";
+echo $hitungan->volume()."<br>";
 ?>
