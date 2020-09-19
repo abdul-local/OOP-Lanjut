@@ -1,52 +1,37 @@
 <?php
-// buat class dengan nama DB
-class Db {
-    //buat variable
-    private $statusconnection = "close";
+// buat class baru dengan nama persegi 
+class Persegi {
+    // buat modifier public 
+    public $panjang;
+    public $lebar;
     // buat method construct
-    public function __construct()
+    public function __construct($p,$l)
     {
-        $this->statusconnection = "Connecting";
+        $this->panjang = $p;
+        $this->lebar = $l;
     }
-   // buat method dengan nama connect
-    public function connect(){
-        $this->statusconnection = "Open";
-    }
-   // buat method denga nama getstatus Connection
-    public function getstatusconnection(){
-        return $this->statusconnection;
-    }
-    // buat method dengan __destruct 
-    public function __destruct()
-    {
-        $this->statusconnection = "close";
-        echo "status : ".$this->statusconnection;
-    }
+    // buat method dengan nama luas
+    public function luas(){
 
-}
-// buat instansiasi  object dengan ama db
-$db = new Db();
-echo $db->getstatusconnection()."<br>";
-echo $db->connect()."<br>";
-echo $db->getstatusconnection()."<br>";
+        return $this->panjang * $this->lebar ;
 
-//buat class baru dengan nama controller
-class controller {
-    // buat method consrtuct
-    public function __construct()
-    {
-        echo "Ini dalam construct broo"."<br>";
     }
+    // buat methd dengan nama keliling
+    public function kelilig(){
+        return 2 *($this-> panjang + $this->lebar );
+    }
+    
+}
+// buat instansiasi dengan nama hitung
+    $hitung = new Persegi (5,10);
+    echo $hitung->luas()."<br>";
+    echo $hitung->kelilig()."<br>";
 
-}
-// buat sub class dengan nama homecontroller 
-class homecontrollr extends controller {
-    // buat method baru dengan nama consdtruct
-    public function __construct()
-    {
-        parent::__construct();
-        echo "Ini dalam Construct broo"."<br>";
-    }
-}
-// instansi dengan nama abdul
-$abdul = new homecontrollr();
+
+    $hitung->panjang =20;
+    $hitung->lebar = 10;
+    echo $hitung->luas()."<br>";
+    echo $hitung->kelilig()."<br>";
+
+
+?>
