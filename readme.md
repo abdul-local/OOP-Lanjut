@@ -16,5 +16,10 @@
 # ada Namanya lagi N-Inheretence itu pawarisan subclass lagi di pecah jadi sublass lagi
 1. conthoh kita buat class utama dengan nama kelas1 , subclassnya dengan nama kelas2 , nah di class dua itu lagi kita buat subclass dengan
 nama misal kelas3 nah dari kelas2 dan kelas3 itu yang dinamakan dengan N-Inheretence
+# Override Method
+1. Override terjadi dengan syrat nama method di class utama dengan subclass sama.dimana output yang di hasilkan yaitu output override
+atau output yang di timpa.
+# catatan bila kita menggunakan parent berarti kita akan memanggil class dari sebelumnya
+
 
 
