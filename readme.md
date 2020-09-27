@@ -21,5 +21,9 @@ nama misal kelas3 nah dari kelas2 dan kelas3 itu yang dinamakan dengan N-Inheret
 atau output yang di timpa.
 # catatan bila kita menggunakan parent berarti kita akan memanggil class dari sebelumnya
 
+# interface salah satu aturan yang dibuat yang dibuat dimana harus diimplentasikan
+1. dimana pada sebuah class harus di implementasikan aturan yang sudah di buat
+2. untuk Multi Implementasi interface pada class di PHP kita dapat menambahakn interace lagi dan untuk class tingal kita berikan koma saja.
+
 
 
