@@ -26,4 +26,7 @@ atau output yang di timpa.
 2. untuk Multi Implementasi interface pada class di PHP kita dapat menambahakn interace lagi dan untuk class tingal kita berikan koma saja.
 
 
+# Abstract class
+1. dimana abstract class ini akan menyebabkan error apabila kita inherentence karena sudah ke tentuan
+# Implentasi Abscract dan Interface pada suatu class
 
