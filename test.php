@@ -1,21 +1,16 @@
 <?php
-
-class Student {
-    private $properties = array();
-    public function __get($property)
-    {
-        return $this->properties[$property];
-    }
-    public function __set($property,$value){
-        $this->properties[$property]="authoSet {$property} as: ".$value;
+class Overloader {
+    function __call($method,$arguments){
+      
+        echo " You callerd a method name {$method} with the following arguments"."<br>";
+        print_r($arguments);
+        echo "<br>";
     }
 
- 
 }
-$st= new Student();
-$st->name="abdul";
-$st->rol=18;
-echo $st->name."<br>";
-echo $st->rol;
+$ol = new Overloader();
+$ol->access(2,3,4);
+$ol->notAnyMethod("boo");
+
 
 ?>

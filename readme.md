@@ -42,3 +42,7 @@ atau output yang di timpa.
 # Magic Method 
 1. __set() dan __get()
 2. ketika kamu ekskusi kode sebelumnya PHP segera mengenali bahwa tidak ada properti bernama name atau rol di kelas, karena property tsb tidak ada maka method set di panggil
+
+# Magic Method __call()
+1. kita bisa buatkan sebuah methodnya dengan function __call($method, $qrguments)
+ 2. pada saat kita instance dan kemudian kita akese sesui keinginan kita maka kita akan mengakses methodnya dan untuk di dalam kurung itu nilai dari argumentnya
