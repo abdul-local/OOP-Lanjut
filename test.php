@@ -1,20 +1,21 @@
 <?php
-class Student {
-    private $name;
-    private $roll;
-    public function setName($name){
-        $this->name = $name;
-    }
-    public function setRoll($roll){
-        $this->roll= $roll;
-    }
-    public function getName(){
-        return $this->name;
-    }
-    public function getRoll(){
-        return $this->roll;
-    }
-}
 
+class Student {
+    private $properties = array();
+    public function __get($property)
+    {
+        return $this->properties[$property];
+    }
+    public function __set($property,$value){
+        $this->properties[$property]="authoSet {$property} as: ".$value;
+    }
+
+ 
+}
+$st= new Student();
+$st->name="abdul";
+$st->rol=18;
+echo $st->name."<br>";
+echo $st->rol;
 
 ?>

@@ -38,3 +38,7 @@ atau output yang di timpa.
 # Accesor Method
 1. Dimana menggunkan method getter dan setter, getter dimulai dengan get lalu diikuti dengan huruf kapital
 2. setter dimulai dengan set lalu diikuti dengan huruf kapital
+
+# Magic Method 
+1. __set() dan __get()
+2. ketika kamu ekskusi kode sebelumnya PHP segera mengenali bahwa tidak ada properti bernama name atau rol di kelas, karena property tsb tidak ada maka method set di panggil
