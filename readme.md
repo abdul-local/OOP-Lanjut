@@ -34,3 +34,7 @@ atau output yang di timpa.
 1. Dimana ini ketika menggunkan static maka untuk akses tidak perlu di buatkan instance langsung menggunakan ::
 2. jika varibelnya juga static maka untuk mengakses dapat menggunakan self:: 
 3. 
+
+# Accesor Method
+1. Dimana menggunkan method getter dan setter, getter dimulai dengan get lalu diikuti dengan huruf kapital
+2. setter dimulai dengan set lalu diikuti dengan huruf kapital
