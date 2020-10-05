@@ -30,3 +30,7 @@ atau output yang di timpa.
 1. dimana abstract class ini akan menyebabkan error apabila kita inherentence karena sudah ke tentuan
 # Implentasi Abscract dan Interface pada suatu class
 
+# Static Method dan Properties 
+1. Dimana ini ketika menggunkan static maka untuk akses tidak perlu di buatkan instance langsung menggunakan ::
+2. jika varibelnya juga static maka untuk mengakses dapat menggunakan self:: 
+3. 
