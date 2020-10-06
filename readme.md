@@ -55,3 +55,7 @@ atau output yang di timpa.
 2. kita bisa menyingkat panggilan dengan menggunakan use
 3. bila terlalu panjang dapat menggunakan Namespace Alias yang sering simbol yang dipakai as
 4. 
+# Autoloading 
+1. di sini saratnya harus nama class sama dengan nama pathnya
+2. kita akan menggunakan fungsi spl_autholod_register(),
+3. Autoload class di Folder Lain, saja dengan autholoading
