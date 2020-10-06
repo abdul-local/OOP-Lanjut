@@ -83,3 +83,8 @@ atau output yang di timpa.
 # Mengclone Object
 1. salinan suatu object. kata kuci yg digunakan yaitu clone
 2. $objCloned = clone $objTarget;
+
+# Mengubah Array Menjadi Object
+1. kita menggunakan json_encode untuk mengkonversi array ke json string
+2. json_decode: digunakan untuk mengkonversi json string ke object
+
