@@ -80,3 +80,6 @@ atau output yang di timpa.
 4. is_a ( mixed $object , string $class_name [, bool $allow_string = FALSE ] ) : bool
 5. paramter pertama object , paramter kedua class_name dan allow_string.
 
+# Mengclone Object
+1. salinan suatu object. kata kuci yg digunakan yaitu clone
+2. $objCloned = clone $objTarget;
