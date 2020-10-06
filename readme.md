@@ -46,3 +46,6 @@ atau output yang di timpa.
 # Magic Method __call()
 1. kita bisa buatkan sebuah methodnya dengan function __call($method, $qrguments)
  2. pada saat kita instance dan kemudian kita akese sesui keinginan kita maka kita akan mengakses methodnya dan untuk di dalam kurung itu nilai dari argumentnya
+# Method Chaining 
+1. method ini sering di pakai dan juga mempermudah pengambilan data yang nantinya
+2. 
