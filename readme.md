@@ -49,3 +49,9 @@ atau output yang di timpa.
 # Method Chaining 
 1. method ini sering di pakai dan juga mempermudah pengambilan data yang nantinya
 2. 
+
+# Namespace
+1. ruang nama, biasa di pakai dipakai di framework
+2. kita bisa menyingkat panggilan dengan menggunakan use
+3. bila terlalu panjang dapat menggunakan Namespace Alias yang sering simbol yang dipakai as
+4. 
