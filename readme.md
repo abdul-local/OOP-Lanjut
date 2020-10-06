@@ -68,3 +68,15 @@ atau output yang di timpa.
 1. method_exists() dan property_exists(). mengecek apakah method dan property tersedia di dalam class
 2. method_exists ( mixed $object , string $method_name ) : bool
 3. parameter pertama objectnya dan paramter yang kedua nama methodnya
+
+# Mengecek Exitasi class
+1. bisa menggunakan fungsi class_exists
+2. paramter pertama class_name  dam parameter kedua autoload
+3. 
+# mengcek Nama dan Tipe Class
+1. untuk mengetahui nama atau tipe class kita bisa menggunakan fungsi get_class atau is_a()
+2. penggunaannya get_class ([ object $object ] ) : string
+3. is_a() digunakan untuk memeriksa jenis class
+4. is_a ( mixed $object , string $class_name [, bool $allow_string = FALSE ] ) : bool
+5. paramter pertama object , paramter kedua class_name dan allow_string.
+
