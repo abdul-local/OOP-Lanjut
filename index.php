@@ -1,18 +1,18 @@
 <?php
+class myClass {
+    public $mine;
+    private $xpto;
+    static protected $test;
 
-require 'vendor/autoload.php';
+    static function test(){
+        var_dump(property_exists('myClass','xpto'));
+    }
+}
+var_dump(property_exists('myClass','mine'));
+var_dump(property_exists(new myClass,'mine'));
+var_dump(property_exists('myClass','xpto'));
+var_dump(property_exists('myClass','bar'));
+var_dump(property_exists('myClass','test'));
+myClass::test();
 
-use Stringy\Stringy as S;
-
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-
-echo S::create('Hello World!')->swapCase()."\n";
-
-// create a log channel
-$log = new Logger('MyLogging');
-$log->pushHandler(new StreamHandler('apps.log', Logger::WARNING));
-
-// add records to the log
-$log->warning('Memory low. Greater than 80%.');
-$log->error('Time limit exceeded.');
+?>

@@ -63,3 +63,8 @@ atau output yang di timpa.
 # Menggunakan Composer
 1. bisa lakukan penginstalla di leptop dengan mengunjungi link https://getcomposer.org/download/
 2. lalu pasang library monolog dengan perintah composr monolog/monolog
+
+# Mengecek Eksistensi Method dan Property
+1. method_exists() dan property_exists(). mengecek apakah method dan property tersedia di dalam class
+2. method_exists ( mixed $object , string $method_name ) : bool
+3. parameter pertama objectnya dan paramter yang kedua nama methodnya
