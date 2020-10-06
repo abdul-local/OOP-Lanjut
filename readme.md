@@ -59,3 +59,7 @@ atau output yang di timpa.
 1. di sini saratnya harus nama class sama dengan nama pathnya
 2. kita akan menggunakan fungsi spl_autholod_register(),
 3. Autoload class di Folder Lain, saja dengan autholoading
+
+# Menggunakan Composer
+1. bisa lakukan penginstalla di leptop dengan mengunjungi link https://getcomposer.org/download/
+2. lalu pasang library monolog dengan perintah composr monolog/monolog
