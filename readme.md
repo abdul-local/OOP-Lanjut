@@ -92,3 +92,7 @@ atau output yang di timpa.
 1. untuk kasus materi ini bisa kita selesaikan dalam membuat sebuah notifikasi emal
 2. dimana kita membuat sebuah interfac dengan nama Notifier, dan 3 buah class yang mewajibkan mengimplementasikan interfac tersebut
 3. 
+# Mengenali Factory Pattern
+1. Fatory disini digunakan untuk membuat sebuah fabrik yang di khususkan menjalan sebuah fungsi yg di inginkan.
+2. konsepnya seperti pabrik
+3. 

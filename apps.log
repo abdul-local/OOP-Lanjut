@@ -2,3 +2,5 @@
 [2020-10-06T16:16:15.595430+02:00] MyLogging.ERROR: Time limit exceeded. [] []
 [2020-10-07T06:02:59.880340+02:00] MyLogging.WARNING: Memory low. Greater than 80%. [] []
 [2020-10-07T06:02:59.883719+02:00] MyLogging.ERROR: Time limit exceeded. [] []
+[2020-10-07T08:01:21.824033+02:00] MyLogging.WARNING: Memory low. Greater than 80%. [] []
+[2020-10-07T08:01:21.826830+02:00] MyLogging.ERROR: Time limit exceeded. [] []
