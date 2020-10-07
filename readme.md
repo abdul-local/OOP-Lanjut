@@ -88,3 +88,7 @@ atau output yang di timpa.
 1. kita menggunakan json_encode untuk mengkonversi array ke json string
 2. json_decode: digunakan untuk mengkonversi json string ke object
 
+# Mengnal Startefy Pattern
+1. untuk kasus materi ini bisa kita selesaikan dalam membuat sebuah notifikasi emal
+2. dimana kita membuat sebuah interfac dengan nama Notifier, dan 3 buah class yang mewajibkan mengimplementasikan interfac tersebut
+3. 

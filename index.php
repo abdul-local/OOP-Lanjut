@@ -1,29 +1,19 @@
 <?php
 
-class foo{
-    public function name(){
-        echo "My name is " .get_class($this)."<br>";
-    }
-}
+require 'vendor/autoload.php';
 
-// buat sebuah object
-$bar= new foo();
+use Stringy\Stringy as S;
 
-echo "Its name is ".get_class($bar)."<br>";
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
-$bar->name();
+echo S::create('Hello World!')->swapCase()."\n";
 
+// create a log channel
+$log = new Logger('MyLogging');
+$log->pushHandler(new StreamHandler('apps.log', Logger::WARNING));
 
-class ParentClass{
-
-}
-class ChildClass extends ParentClass{
-
-}
-// buat objcet
-$cc = new ChildClass();
-if(is_a($cc,"ChildClass")) echo " It's a ChildClass Type Object ";
-echo "<br>";
-if(is_a($cc,"ParentClass")) echo "It's a also a ParentClass Type Object";
-
+// add records to the log
+$log->warning('Memory low. Greater than 80%.');
+$log->error('Time limit exceeded.');
 ?>
