@@ -102,3 +102,6 @@ atau output yang di timpa.
 # Mengenal Adapter Pattern
 1. Kali ini kita akan melihat bagaimana sebuah adapter pattern dapat membantu kamu untuk menangani berbagai objek yang memerlukan sebuah method untuk menangani kasus general. Walaupun secara atribut class - class tersebut berbeda. Namun dengan adapter pattern ini, kita dapat menggunakan apa saja class-nya selama memenuhi syarat yang dibutuhkan oleh class adapter.
 
+# Mengenal Singleton Pattern
+1. ini bisa menyelsaikan masalah instansiasi
+2. dengan mengguanakan singleton maka code yang kita buat lebih sedikit
