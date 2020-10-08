@@ -105,3 +105,7 @@ atau output yang di timpa.
 # Mengenal Singleton Pattern
 1. ini bisa menyelsaikan masalah instansiasi
 2. dengan mengguanakan singleton maka code yang kita buat lebih sedikit
+
+# Mengenal Iterator Pattrn
+1. Iterator adalah salah satu bahasan yang menarik dalam dunia design pattern. Kalau kita terjemahkan ke bahasa Indonesia Iterator/Iteration adalah Iterasi atau pengulangan.
+ 
