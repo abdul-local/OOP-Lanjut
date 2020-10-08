@@ -96,3 +96,9 @@ atau output yang di timpa.
 1. Fatory disini digunakan untuk membuat sebuah fabrik yang di khususkan menjalan sebuah fungsi yg di inginkan.
 2. konsepnya seperti pabrik
 3. 
+# Abstract Factory 
+1. sama saja sama Factory 
+
+# Mengenal Adapter Pattern
+1. Kali ini kita akan melihat bagaimana sebuah adapter pattern dapat membantu kamu untuk menangani berbagai objek yang memerlukan sebuah method untuk menangani kasus general. Walaupun secara atribut class - class tersebut berbeda. Namun dengan adapter pattern ini, kita dapat menggunakan apa saja class-nya selama memenuhi syarat yang dibutuhkan oleh class adapter.
+

@@ -1,19 +1,24 @@
 <?php
+spl_autoload_register(function($class){
+    include "documents/entities/".$class.".php";
 
-require 'vendor/autoload.php';
+});
+include "documents/DocumentAdapter.php";
 
-use Stringy\Stringy as S;
+$blog = new Blog("Hello world","Abdul","ini meruapakan sebuah konten","http://myblog.net/hello-word");
+    
+$documnetAdapter=new DocumentAdapter($blog);
+echo $documnetAdapter->createHeader();
+echo $documnetAdapter->createPreview(100);
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+$book = new Book("Abdul sang penakluk covid","abdul elektro","ini buku bercerita tentang abdul");
+$documnetAdapter=new DocumentAdapter($book);
+echo $documnetAdapter->createHeader();
+echo $documnetAdapter->createPreview(100);
 
-echo S::create('Hello World!')->swapCase()."\n";
+$paper = new Paper("Ini Title Web abdul","abdul elktro","Ini mrupakan sebuah content","hai I am electrical enggineering and i work sofware developer");
+$documnetAdapter = new  DocumentAdapter($paper);
+echo $documnetAdapter->createHeader();
+echo $documnetAdapter->createPreview(100);
 
-// create a log channel
-$log = new Logger('MyLogging');
-$log->pushHandler(new StreamHandler('apps.log', Logger::WARNING));
-
-// add records to the log
-$log->warning('Memory low. Greater than 80%.');
-$log->error('Time limit exceeded.');
 ?>
