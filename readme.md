@@ -109,3 +109,6 @@ atau output yang di timpa.
 # Mengenal Iterator Pattrn
 1. Iterator adalah salah satu bahasan yang menarik dalam dunia design pattern. Kalau kita terjemahkan ke bahasa Indonesia Iterator/Iteration adalah Iterasi atau pengulangan.
  
+ # Mengenal Obsrver Pattern
+ 1. digunakan untuk memecahkan instansiasi
+ 2. 
