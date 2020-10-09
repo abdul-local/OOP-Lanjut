@@ -114,4 +114,10 @@ atau output yang di timpa.
  2. 
 
  # Mengenal pattern Proxy Pattern
- 
+
+ # Mengenal decorator Pattern
+
+# Mengenal Active Record Pattern 
+1. langkah pertama install composer
+2. passang gabordemooij dengan melakukan printah composer require gabordemoij/redbean
+3. buat databae di mysql

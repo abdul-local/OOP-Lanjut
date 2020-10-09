@@ -1,24 +1,38 @@
 <?php
-spl_autoload_register(function($class){
-    include "documents/entities/".$class.".php";
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(E_ALL);
 
-});
-include "documents/DocumentAdapter.php";
+require 'vendor/autoload.php';
+use \RedBeanPHP\R as R;
+R::setup('mysql:host=localhost;dbname=abdul','root','');
 
-$blog = new Blog("Hello world","Abdul","ini meruapakan sebuah konten","http://myblog.net/hello-word");
-    
-$documnetAdapter=new DocumentAdapter($blog);
-echo $documnetAdapter->createHeader();
-echo $documnetAdapter->createPreview(100);
+// insert
+// $user = R::dispense('users');// Setting table : users.
+// $user->name = 'Budi';
+// $id = R::store($user);
+// echo "{$user->name} berhasil terdaptar dengan id {$id} "."<br>";
 
-$book = new Book("Abdul sang penakluk covid","abdul elektro","ini buku bercerita tentang abdul");
-$documnetAdapter=new DocumentAdapter($book);
-echo $documnetAdapter->createHeader();
-echo $documnetAdapter->createPreview(100);
+// kita coba select data
+// $user= R::load('users',1);
+// print_r($user);
 
-$paper = new Paper("Ini Title Web abdul","abdul elktro","Ini mrupakan sebuah content","hai I am electrical enggineering and i work sofware developer");
-$documnetAdapter = new  DocumentAdapter($paper);
-echo $documnetAdapter->createHeader();
-echo $documnetAdapter->createPreview(100);
+//menampilkan data
+// $users = R::findAll('users');
+// print_r($users);
+
+// Update Data
+// $user = R::findOne('users','name = ?',['Budi']);//cari user bernama Budi
+
+// $user->name ='Muhammad';// Set nama jadi Muhammad
+
+// R::store($user); // Simpan
+// print_r($user);
+
+// Delete Data
+
+$user=R::findOne('users','name =? ',['Muhammad']);
+R::trash($user);
+
 
 ?>

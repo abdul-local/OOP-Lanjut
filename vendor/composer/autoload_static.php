@@ -17,6 +17,10 @@ class ComposerStaticInit6d9bd545cdc33fe6297c1b7e102124fa
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Stringy\\' => 8,
         ),
+        'R' => 
+        array (
+            'RedBeanPHP\\' => 11,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -35,6 +39,10 @@ class ComposerStaticInit6d9bd545cdc33fe6297c1b7e102124fa
         'Stringy\\' => 
         array (
             0 => __DIR__ . '/..' . '/danielstjules/stringy/src',
+        ),
+        'RedBeanPHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
         ),
         'Psr\\Log\\' => 
         array (
