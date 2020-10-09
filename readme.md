@@ -125,3 +125,6 @@ atau output yang di timpa.
 # Mengenal Facade Pattern
 1. mampu memecahkan problem untuk yang banyak class
 2. Facade berguna sebagai wrapper atau enkapsulasi kerumitan pada program kita. Interface yang tadinya rumit, akan berubah menjadi lebih mudah digunakan. Sehingga kita bisa lebih mudah berkolaborasi secara internal ataupun external.Tentunya kode seperti ini akan lebih maintainable dibanding sebelumnya.
+
+# Mengenal Dependency Injection
+1. 
