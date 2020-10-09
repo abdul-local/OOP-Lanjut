@@ -112,3 +112,6 @@ atau output yang di timpa.
  # Mengenal Obsrver Pattern
  1. digunakan untuk memecahkan instansiasi
  2. 
+
+ # Mengenal pattern Proxy Pattern
+ 
