@@ -121,3 +121,7 @@ atau output yang di timpa.
 1. langkah pertama install composer
 2. passang gabordemooij dengan melakukan printah composer require gabordemoij/redbean
 3. buat databae di mysql
+
+# Mengenal Facade Pattern
+1. mampu memecahkan problem untuk yang banyak class
+2. Facade berguna sebagai wrapper atau enkapsulasi kerumitan pada program kita. Interface yang tadinya rumit, akan berubah menjadi lebih mudah digunakan. Sehingga kita bisa lebih mudah berkolaborasi secara internal ataupun external.Tentunya kode seperti ini akan lebih maintainable dibanding sebelumnya.
